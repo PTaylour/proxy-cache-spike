@@ -1,0 +1,17 @@
+#Node Artifacts#
+node_modules/
+dist/
+.nyc_output/
+coverage
+
+# OS X Artifacts #
+.DS_Store
+
+# Emacs Artifacts #
+\#*\#
+
+# Temporary files #
+*~
+
+# Yarn error log #
+yarn-error.log
