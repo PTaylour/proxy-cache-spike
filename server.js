@@ -11,6 +11,8 @@ const port = process.env.PORT || 5790
 
 let app = express()
 
+app.use(morgan('dev'))
+
 app.use(bodyParser.json({limit: '500kb'}))
 app.use(expressBoom())
 app.use(timeout('5s'))
@@ -21,9 +23,8 @@ app.all('*', (req, res) => res.status(404).send())
 
 app.use((err, req, res, next) => {
   if (err) {
-      res.status(500).send(err.message)
-    }
+    res.status(500).send(err.message)
   }
-)
+})
 
 app.listen(port, () => console.log('listening on port', port))
