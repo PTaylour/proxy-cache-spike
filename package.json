@@ -12,7 +12,7 @@
     "start-watch": "NODE_ENV=dev nodemon -V --watch . --ignore dist/ --exec 'yarn start'"
   },
   "dependencies": {
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "babel-plugin-transform-es2015-destructuring": "^6.23.0",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-env": "^1.4.0",
